@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color : #ffceed;
+    font-family: system-ui;
+  }
+
+  div{
+    margin: 5px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .underneath {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: .5rem;
+    overflow: hidden;
+    background: rgba(0,0,0,.025);
+  }
+  .underneath:after {
+    content: 'Press Here & Move Around';
+    position: absolute;
+    font-size: 1rem;
+    animation: bye 1s linear 3s forwards;
+    pointer-events: none;
+  }
+  @keyframes bye {
+    100% { opacity: 0; }
+  }
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    outline: 0;
+    cursor: grab;
+  }

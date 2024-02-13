@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="./styles.css">
+<title>Card</title>
+<div class="wrapper">
+  <div class="container">
+<div class="valentines-day-card front">
+  <input id="open" type="checkbox">
+  <label class="open" for="open"></label>
+  <div class="card-front">
+    <div class="note">Happy Valentines Day</div>
+  </div>
+
+  <div class="card-inside">
+    <audio id="player" name="jingle-bells">
+      <source src="https://on.soundcloud.com/ywLa1" type="audio/mpeg" />
+    </audio>
+    <div class="text-one">
+      If I know what love is,<br>
+      It is all because of you.<br>
+      My Love
+    </div>
+    <div class="heartin"></div>
+    <div class="smile"></div>
+    <div class="eyes"></div>
+  </div>
+</div>
+<div class="behind">
+<ul class="bg-bubbles">
+  <li><div class="heart pulse2">♥</div></li>
+  <li><div class="heart pulse2">♥</div></li>
+  <li><div class="heart pulse2">♥</div></li>
+  <li><div class="heart pulse2">♥</div></li>
+  <li><div class="heart pulse2">♥</div></li>
+  <li><div class="heart pulse2">♥</div></li>
+  <li><div class="heart pulse2">♥</div></li>
+  <li><div class="heart pulse2">♥</div></li>
+  <li><div class="heart pulse2">♥</div></li>
+  <li><div class="heart pulse2">♥</div></li>
+</ul> 
+</div>
+</div>
+</div>
+
+<audio preload="auto" autoplay="autoplay" loop="loop" id="my_audio" src="..\card\audio\Tu_Chodiyon_Na.mp3"type="audio/mpeg"></audio>
+
+<script src="app.js"></script>
+<script type="text/javascript">
+  window.onload=function(){
+    document.getElementById("my_audio").play();
+  }
+</script>
